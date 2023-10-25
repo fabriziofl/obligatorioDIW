@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400&family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Inter Tight', sans-serif;
+    background-color: #1450A3;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FFC436;
+    overflow: auto;
+    font-family: 'Inter Tight', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+
+}
+
+
+header,
+main,
+footer {
+    max-width: 1300px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header {
+    width: 100%;
+    margin-top: 10px;
+}
+
+header section:first-of-type img {
+    height: 400px;
+    box-shadow:
+        -11.4px -5.7px 54.9px rgba(0, 0, 0, 0.029),
+        -19.8px -9.9px 54.3px rgba(0, 0, 0, 0.075),
+        -23.7px -11.9px 44px rgba(0, 0, 0, 0.124),
+        -19.9px -9.9px 33.7px rgba(0, 0, 0, 0.177),
+        2.4px 1.2px 32.7px rgba(0, 0, 0, 0.234),
+        100px 50px 80px rgba(0, 0, 0, 0.31);
+}
+
+header section:nth-child(1) {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+
+}
+
+header nav ul {
+    list-style-type: none;
+
+}
+
+header nav ul li {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+header nav ul li a {
+    margin: 0 auto;
+    display: inline-block;
+    width: 200px;
+    border-top: 4px solid transparent;
+    text-align: center;
+    align-content: space-around;
+    line-height: 70px;
+    color: #F4CE14;
+    text-decoration: none;
+    font-size: large;
+}
+
+header nav ul li a:hover {
+    border-top: 4px solid #F4CE14;
+    color: yellowgreen;
+}
+
+header section:nth-child(2) {
+    margin: 0px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+header section {
+    display: flex;
+}
+
+header section:last-of-type {
+    display: flex;
+    height: fit-content;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+header figure {
+    height: 250px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+header figure img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+body h2 {
+    /* todos los h2 */
+    font-size: 3em;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+main section:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    padding-left: 140px;
+    padding-right: 140px;
+
+}
+
+
+
+
+main section:nth-of-type(2) figure img {
+    object-fit: contain;
+    max-height: 200px;
+    box-shadow:
+        6.6px 6.6px 2.2px rgba(0, 0, 0, 0.02),
+        13.2px 13.2px 5.3px rgba(0, 0, 0, 0.028),
+        20.3px 20.3px 10px rgba(0, 0, 0, 0.035),
+        29.3px 29.3px 17.9px rgba(0, 0, 0, 0.042),
+        45.2px 45.2px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+
+
+
+}
+
+main section:nth-of-type(2) article h4 {
+    /*aqui definimos estilos del h4 de las tarjetas*/
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    text-align: left;
+    border-bottom: 1px #FBECB2 solid;
+    color: #FBECB2;
+    ;
+
+}
+
+main section:nth-of-type(2) article p a {
+    /*aqui definimos estilos del boton*/
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background-color: #F4CE14;
+    color: #191D88;
+    text-decoration: none;
+    border-radius: 0px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+}
+
+/*el hover del "Ver mas"*/
+main section:nth-of-type(2) article p a:hover {
+    color: #FFDFDF;
+
+}
+
+main section:nth-of-type(2) p {
+    /* aqui las opciones 
+    para el texto dentro de las tarjetitas*/
+    display: inline-block;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #FFDFDF;
+}
+
+section:nth-of-type(2) article {
+    border: 1px solid #191D88;
+    border-radius: 0px;
+    padding: 15px;
+    font-size: 15px;
+
+}
+
+section:nth-of-type(4) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 600px;
+    padding: 50px 50px;
+
+
+
+}
+
+/* Vamos a dejar los background image del mosaico por si hay errores 
+a la hora de cargar las imagenes y asi no perder dicho mosaico.*/
+
+section:nth-of-type(4) figure:nth-of-type(1) {
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: yellow;
+    background-image: url(../imagenes/mosaicoGrid/cristiano.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+section:nth-of-type(4) figure:nth-of-type(2) {
+    grid-area: 3 / 1 / 4 / 3;
+    background-color: black;
+    background-image: url(../imagenes/mosaicoGrid/uruguaycampeon.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+section:nth-of-type(4) figure:nth-of-type(3) {
+    grid-area: 2 / 2 / 3 / 4;
+    background-color: blue;
+    background-image: url(../imagenes/mosaicoGrid/panoramica.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section:nth-of-type(4) figure:nth-of-type(4) {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: wheat;
+    background-image: url(../imagenes/mosaicoGrid/zidane.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+section:nth-of-type(4) figure:nth-of-type(5) {
+    grid-area: 1 / 3 / 2 / 5;
+    background-color: pink;
+    background-image: url(../imagenes/mosaicoGrid/estadiolleno.jpg);
+    background-size: cover;
+}
+
+section:nth-of-type(4) figure:nth-of-type(6) {
+    grid-area: 3 / 3 / 5 / 4;
+    background-color: green;
+    background-image: url(../imagenes/mosaicoGrid/galacticos.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+section:nth-of-type(4) figure:nth-of-type(7) {
+    grid-area: 4 / 1 / 5 / 3;
+    background-color: lavenderblush;
+    background-size: cover;
+    background-image: url(../imagenes/mosaicoGrid/widefutbol.jpeg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+section:nth-of-type(4) figure:nth-of-type(8) {
+    grid-area: 2 / 4 / 5 / 5;
+    background-color: tomato;
+    background-size: cover;
+    background-image: url(../imagenes/mosaicoGrid/leyendas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* aqui debajo comienza la seccion de preventa */
+
+section:nth-of-type(5) {
+    padding-bottom: 15px;
+}
+
+main section:nth-of-type(6) {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    height: 100vh;
+    margin: 0;
+}
+
+main section:nth-of-type(6) article {
+    border-radius: 2px;
+    padding: 5px;
+    text-align: center;
+    max-width: 250px;
+}
+
+main section:nth-of-type(6) article h3 {
+    color: black;
+    font-size: 2.0em;
+}
+
+main section:nth-of-type(6) article figure {
+    display: contents;
+}
+
+main section:nth-of-type(6) article img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px rgb(47, 45, 45);
+}
+
+main section:nth-of-type(6) article h3 {
+    margin-bottom: 10px;
+}
+
+main section:nth-of-type(6) article ul {
+    list-style-type: style type auto;
+    padding: 20px;
+}
+
+main section:nth-of-type(6) article li {
+    margin: 5px 0;
+    color: #FBECB2;
+    font-weight: 500;
+    list-style: circle;
+}
+
+/* debajo va el form y tabla */
+
+section:nth-of-type(7) {
+    /* este es el section de tabla y form*/
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(7) table {
+    float: left;
+    margin: 0px auto;
+    width: 50%;
+    border-collapse: collapse;
+    margin-top: 1px;
+}
+
+
+section:nth-of-type(7) table tr:nth-of-type(2) td,
+tr:nth-of-type(4) td {
+    background-color: #DEE1E6;
+}
+
+section:nth-of-type(7) table tr:nth-of-type(3) td,
+tr:nth-of-type(5) td {
+    background-color: white;
+}
+
+section:nth-of-type(7) table td {
+    border-left: 1px solid #DEE1E6;
+    border-right: 1px solid #DEE1E6;
+}
+
+section:nth-of-type(7) table td,
+th {
+    text-align: center;
+    padding: 20px;
+    padding-right: 100px;
+
+}
+
+section:nth-of-type(7) table tr th {
+    background-color: black;
+    color: white;
+}
+
+section:nth-of-type(7) table th {
+    background-color: #333333;
+    color: white;
+}
+
+/* este es el selector para el article que contiene form */
+main section:nth-of-type(7) article:first-of-type {
+    display: grid;
+    float: left;
+    width: 50%;
+}
+
+main section:nth-of-type(7) article:nth-of-type(2) form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+main section:nth-of-type(7) article:nth-of-type(2) form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0px 0px 15px 0px;
+}
+
+main section:nth-of-type(7) article:nth-of-type(2) form fieldset:first-of-type {
+    grid-column: 1/2
+}
+
+main section:nth-of-type(7) article:nth-of-type(2) form fieldset:nth-of-type(3),
+fieldset:nth-of-type(4),
+fieldset:nth-of-type(5) {
+    grid-column: 1/3;
+}
+
+main section:nth-of-type(7) article:nth-of-type(2) form input {
+    width: 100%;
+    background-color: #FBECB2;
+}
+
+main section:nth-of-type(7) article:nth-of-type(2) form label {
+    display: block;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+
+main section:nth-of-type(7) article:nth-of-type(2) fieldset:nth-of-type(2) select {
+    width: 100%;
+    background-color: #FBECB2;
+}
+
+main section:nth-of-type(7) article:nth-of-type(2) fieldset:nth-of-type(2) select:focus {
+    background-color: antiquewhite;
+}
+
+main section:nth-of-type(7) article:nth-of-type(2) form [type="text"],
+select,
+[type="email"] {
+    padding: 5px;
+}
+
+main section:nth-of-type(7) article:nth-of-type(2) form textarea {
+    resize: none;
+    width: 100%;
+    height: 70px;
+    background-color: #FBECB2;
+}
+
+main section:nth-of-type(7) article:nth-of-type(2) form textarea:focus {
+    background-color: antiquewhite;
+}
+
+main section:nth-of-type(7) article:nth-of-type(2) h3 {
+    font-weight: bold;
+    text-align: center;
+    border: 0.5px solid antiquewhite;
+    margin-bottom: 10px;
+}
+
+main section:nth-of-type(7) article:nth-of-type(2) input[type="submit"] {
+    background-color: #FFDFDF;
+    padding: 6px 6px;
+    padding: .375rem .75rem;
+    border: 1px solid #007bff;
+    border-radius: .25rem;
+    color: #000000;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out;
+}
+
+main section:nth-of-type(7) article:nth-of-type(2) input[type="submit"]:hover {
+    color: #FBECB2;
+    background-color: #191D88;
+}
+
+
+main section:nth-of-type(7) article:nth-of-type(2) input[type="text"]:focus,
+main section:nth-of-type(7) article:nth-of-type(2) input[type="email"]:focus {
+    background-color: antiquewhite;
+}
+
+/* Aqui debajo comienza el footer */
+
+footer {
+    border-top: 1px solid #318484;
+    border-bottom: 1px solid #318484;
+    overflow: auto;
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+footer section {
+    display: grid;
+    justify-content: center;
+}
+
+footer section article figure {
+    display: inline-flex;
+    width: 230px;
+    margin: 10px 0;
+    padding-top: 5px;
+    border-top: 1px solid rgba(250, 235, 215, 0.434);
+    justify-content: space-around;
+
+}
+
+footer section article figure img {
+    height: 20px;
+}
+
+footer article {
+    display: flex;
+    position: relative;
+    margin: 0;
+}
+
+/* STICKY BUTTON ABAJO! */
+footer article button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    color: #FFC436;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer article button a {
+    text-decoration: none;
+    color: #FFC436;
+    background-color: none;
+
+}
+
+footer article button:hover {
+    color: #FFC436;
+    font-weight: bolder;
+}
